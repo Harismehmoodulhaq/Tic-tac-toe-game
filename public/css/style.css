@@ -13,7 +13,8 @@ h1 {
 }
 
 .wrapper {
-    height: 750px;
+    /* height: 750px; */
+    height: 711px;
     width: 1440px;
     display: flex;
     align-items: center;
@@ -120,3 +121,13 @@ h1 {
 .tile-winner span{
     color: #23CE6B;
 }
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        flex-direction: column;
+        height: 218vh;
+    }
+    .restart {
+        -webkit-text-stroke-width: 1.5px;
+    }
+  }
